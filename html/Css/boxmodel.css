@@ -1,0 +1,17 @@
+h2{
+    border: 10px solid blue;
+    border-radius: 30px;
+    margin: 10px;
+    color: red;
+}
+img{
+    border: 10px double green;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+p{
+    border: 10px groove darkviolet;
+    margin-bottom: 30px;
+    border-style: dashed;
+    border-radius: 30px;
+}

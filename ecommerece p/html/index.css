@@ -1,0 +1,429 @@
+
+.navbar{
+    background-color: black;
+    color: antiquewhite;
+}
+.icons{
+    justify-content: space-evenly ;
+    padding-left: 20px;
+    margin: 20px;
+ }    
+ .icons i{
+    cursor: pointer;
+ }   
+ .opp{
+  background-color: rgb(68, 31, 31) !important;
+
+ 
+  height: 50%;
+ } 
+ .flex{
+  display: flex;
+ }
+ .t{
+  margin-left: 300px;
+  margin-right: 150px;
+  margin-top: 200px;
+ }
+ .AP{
+  background-color: grey;
+  display: grid;
+  grid-template-columns:repeat(1fr,5);
+
+ }
+ .modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items:flex-end;
+ }
+ .modal-dialog{
+
+width: 400px;
+ }
+ .modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ #profileButton:hover + .custom-modal {
+    display: flex; 
+  }
+  .modal-dialog {
+    max-height: 90vh; 
+    overflow-y: auto; 
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+ .images{
+  border:2px solid black;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: space-between;
+
+  
+ }
+ .item{
+  height: 250px;
+  width: 250px;
+ }
+ img{
+  height: 100%;
+  width: 100%;
+ }
+ h2{
+  background-color: black;
+  text-align: center;
+  font-weight: 100px;
+  color: antiquewhite;
+  padding-bottom: 150px;
+ }
+ #item1{
+  height: 250px;
+  width: 230px;
+  transition-property:all ;
+  transition-duration: 2s;
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+ }
+
+  
+
+  #item1:hover{
+    transform: scale(1.1);
+  }
+
+ @keyframes zoom {
+  0%{
+    transform: translateY(1);
+  }
+  100%{
+    transform: translatey(1.2);
+  }
+}
+
+ 
+ #item2{
+  height: 280px;
+  width: 250px;
+  transition-property:all ;
+  transition-duration: 2s;
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  
+ }
+ @keyframes zoom {
+  0%{
+    transform: translateY(1);
+  }
+  100%{
+    transform: translatey(1.3);
+  }
+}
+  
+ #item2:hover{
+    transform: scale(1.2);
+  }
+ #item3
+ {
+  height: 300px;
+  width: 270px;
+  transition-property:all ;
+  transition-duration: 2s;
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  
+ }
+ @keyframes zoom {
+  0%{
+    transform: translateY(1);
+  }
+  100%{
+    transform: translatey(1.4);
+  }
+}
+  
+ #item3:hover{
+    transform: scale(1.3);
+  }
+ #item4{
+  height: 280px;
+  width: 250px;
+  transition-property:all ;
+  transition-duration: 2s;
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  
+ }
+ @keyframes zoom {
+  0%{
+    transform: translateY(1);
+  }
+  100%{
+    transform: translatey(1.3);
+  }
+}
+  
+ #item4:hover{
+    transform: scale(1.2);
+  }
+  
+ #item5{
+  height: 250px;
+  width: 230px;
+  transition-property:all ;
+  transition-duration: 2s;
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  
+ }
+ @keyframes zoom {
+  0%{
+    transform: translateY(1);
+  }
+  100%{
+    transform: translatey(1.2);
+  }
+}
+  
+ #item5:hover{
+    transform: scale(1.1);
+  }
+  .mcard{
+    margin-top: 200px;
+  }
+ .link{
+    text-decoration: none;
+    color: inherit;
+ }
+  .topproducts{
+    display: flex;
+    color: antiquewhite;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .topproducts1:hover{
+    background-color: red;
+  }
+  .col{
+    color: azure;
+  }
+  .cards{
+    justify-content: space-evenly;
+   
+    margin: 60px 20px 20px 20px;
+  }
+  .bg-black{
+    background-color: black;
+  }
+  .footer{
+    margin-top: 50p
+    display: flex;
+    justify-content: space-between;
+  }
+  .adv{
+    justify-content: space-around;
+  }
+  #icon{
+    font-size: 30px;
+    
+    padding-left: 20px;
+    
+  }
+  .card{
+    height: 550px;
+    background-color: black;
+    border: 1px solid rgb(80, 76, 76);
+
+  }
+  .card img{
+    height: 250px;
+    width: 280px;
+  }
+ /* .btn {
+         background-color: red;
+  } */
+   .hov:hover{
+    height: 280px;
+    width: 280px ;
+   }
+  .card-body{
+    color: antiquewhite;
+  }
+  
+ 
+<!-----------------------------------page1--------------------------------->
+.container1{
+    display: flex;
+  
+}
+.ite{
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px 40px 60px 20px; */
+    margin-top: 40px;
+}
+.img1{
+    border: 1px solid white;
+    height: 100px;
+    width: 100px;
+}
+/* .container 2 {
+    display: grid;
+} */
+ .img2{
+    padding-left: 30px;
+    height: 500px;
+    width: 800px;
+ }
+ .flax{
+    display: flex;
+    margin: 50px;
+ }
+ .description{
+    padding-left: 20px;
+    color:antiquewhite;
+ }
+ .but{
+    height: 25px;
+    width: 80px;
+     margin-top: 60px;
+     margin-left: 150px;
+     background-color: green;
+ }
+ .but1{
+    margin-top: 10px;
+    width: 150px;
+    background-color:red ;
+ }
+ .specifications{
+    
+ }
+ .headings{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite;
+ }
+  .h5{
+    margin-left: 80px; */
+ } 
+ .h5:hover{
+    background-color: red;
+    
+ }
+ .ul{
+    display: flex;
+    color: antiquewhite;
+ }
+ <!---------------------cart--------------------->
+ .products{
+    background-color: #341608;
+    border: 5px solid rgb(0, 244, 106);
+    display: flex;
+ 
+ }
+ .cart{
+    margin-top: 50px;
+    border: 2px solid black;
+    background-color: #2b2727;
+    display: flex;
+    border
+ }
+ .cart1{
+    padding-left: 100px;
+    padding-right: 400px;
+    color: antiquewhite;
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+ }
+ .cart1 img{
+    width: 200px;
+    height: 200px;
+ }
+ .product1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+  
+ .summary{
+    padding-left: 50px;
+    color: antiquewhite;
+    background-color: #2b2727;
+    width: 300px; 
+ }
+ .layout{
+    overflow-y:scroll;
+    max-height: 600px;
+    flex-grow: 1;
+ }
+ .boxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .plus{
+    background-color: rgba(64, 62, 62, 0.928);
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    padding-bottom: 10px;
+
+ }
+ .minus{
+    background-color: rgba(64, 62, 62, 0.928);
+    cursor: pointer;
+    color: white;
+    padding-bottom: 10px;
+    height: 30px;
+    width: 30px;
+    
+ }
+ .quantity{
+    width: 50px;
+   color: red;
+    cursor: pointer;
+    padding-top: 3px;
+    text-align: center;
+    height: 30px;
+    width: 70px;
+padding-top: 10px;
+    background-color: rgba(64, 62, 62, 0.928);
+
+ }
+ .borderline{
+    border: 1px solid rgb(87, 84, 80);
+   
+    margin: 20px 40px 20px 30px;
+ }
+ .summary{
+    justify-content: center;
+ }
+ .summary1{
+    display: flex;
+justify-content: center; }
+ .b1{
+    background-color: red;
+    border-radius: 8px;
+    height: 40px;
+    width: 200px;
+ }

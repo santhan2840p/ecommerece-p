@@ -1,0 +1,47 @@
+.head{
+    border: 2px solid black;
+    background-color: aquamarine;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 2000px;
+    width: auto;
+
+}
+img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.one{
+    position: fixed;
+    left: 600px;
+    top: 100px
+}
+.two{
+    position: fixed;
+    top: 200px;
+    left: 400px;
+}
+.three{
+    position: fixed;
+    top: 200px;
+    left: 800px;
+}
+.four{
+    position:fixed;
+    top: 400px; 
+    left: 00px;
+}
+.five{
+    position: fixed;
+    top: 400px ;
+    left: 800px;
+}
+.six{
+    position: fixed;
+    top: 550px;
+    left:600px;
+}

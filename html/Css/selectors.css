@@ -1,0 +1,51 @@
+/*div::first-line{
+   color: red;
+}*/
+/* section::first-letter{ 
+    color: red;
+    background-color: black;
+}*/
+/* section::after{ 
+ content: "Santhan";
+ } */
+ /* p::before{  
+    content: "Santhan";
+    color: red;
+    text-decoration: underline;
+ }
+ H2::selection{
+    color: blue;
+    background-color: red;
+ }*/
+ /* H3:hover{ 
+    color: red;
+    background-color: blue;
+ }
+ p:nth-child(2){
+    color: blue;
+    background-color: antiquewhite;
+ }
+ p:last-child{
+    color: red;
+    background-color: aquamarine;
+ }
+ p:first-child{
+    color: lightblue;
+    background-color: red;
+ } */
+  /* section h2{ 
+    color:red;
+    background-color: aquamarine;
+  }
+  div>p{
+    color: aqua;
+    background-color: black;
+  }*/
+  /* p~p{ 
+    color: yellow;
+    background-color: black;
+  }*/
+  p+p{
+    color: antiquewhite;
+    background-color: black;
+  }

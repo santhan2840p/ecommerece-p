@@ -1,0 +1,40 @@
+.grid{
+    border: 4px solid green;
+   display: grid ;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto auto auto auto;
+   row-gap: 50px;
+   column-gap: 50px;
+
+
+}
+.images{
+    border: 3px solid red;
+    
+margin: 5px;
+        width: 100px;
+        height: 100px;
+}
+.one{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    
+}
+#two{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    
+}
+#three{
+    grid-row-start: 9;
+    grid-row-end: 8;
+    
+    margin: 5px;
+    
+}
+#four{
+    grid-column-start:3 ;
+    grid-column-end: 6;
+    
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+        .grid{
+            border: 4px solid green;
+           display: grid ;
+           grid-template-columns: auto auto auto;
+           grid-template-rows: auto auto auto auto;
+           row-gap: 50px;
+           column-gap: 50px;
+
+
+        }
+        img{
+            border: 3px solid red;
+            
+margin: 5px;
+                width: 100px;
+                height: 100px;
+        }
+        .a{
+            grid-column-start:1 ;
+            grid-column-end: 3;
+            width: 400px;
+        }
+        .b{
+            grid-row-start: 2;
+            grid-row-end: 5;
+            height: 430px;
+            width: 150px;
+        }
+        .i{
+            grid-row-start: 9;
+            grid-row-end: 8;
+            height: 300px;
+            width: 300px;
+            margin: 5px;
+            
+        }
+        .c{
+            grid-column-start:3 ;
+            grid-column-end: 6;
+            width: 200px;
+        }
+
+
+    
+
+
+    </style>
+</head>
+<body>
+    <h>grid layout</h>
+    <div class="grid">
+        <img class="a" src="../media/1.jpeg" alt="">
+        <img class="b" src="C:\">
+        <img class="c" src="C:\Users\haris\Downloads\web-application-development-process.png" alt="">
+        <img class="d" src="C:\Users\haris\Downloads\AdobeStock_241083104-1400x934.jpg">
+        <img class="e" src="C:\Users\haris\Downloads\Web-Development.jpg">
+        <img class="f" src="C:\Users\haris\Downloads\ygqaam1n24c21.jpg">
+        <img class="g" src="C:\Users\haris\Downloads\website-development-process.jpg">
+        <img class="h" src="C:\Users\haris\Downloads\th.jpg">
+        <img class="i" src="C:\Users\haris\OneDrive\Pictures\Screenshots 1\Screenshot (179).png">
+    </div>
+    
+</body>
+</html>

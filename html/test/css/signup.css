@@ -1,0 +1,12 @@
+div{
+    border: 2px solid black;
+    margin: 10px;
+}
+.text:hover{
+    color: red;
+    background-color: blue;
+}
+.button:hover{
+    color: yellow;
+    background-color: green;
+}
