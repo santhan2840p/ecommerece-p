@@ -1,48 +1,6 @@
-// // // Fetch cart items from localStorage
-// const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-
-// // Get the container for the cart items
-// const cartContainer = document.getElementById("cartContainer");
-
-// // If the cart is empty, show a message
-// if (cartItems.length === 0) {
-//   cartContainer.innerHTML = "<p>Your cart is empty.</p>";
-// } else {
-//   // Render each cart item
-//   cartContainer.innerHTML = cartItems
-//     .map((item) => {
-//       return `
-//         <div class="cartItem" style="display: flex; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding: 10px 0;">
-//           <img src="${item.image}" alt="${item.title}" style="width:100px; height:100px; margin-right: 20px;"/>
-//           <div>
-//             <h5>${item.title}</h5>
-//             <p>Price: $${item.price}</p>
-//             <button class="removeBtn" data-id="${item.id}" style="color: white; background: red; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer;">Remove</button>
-//           </div>
-//         </div>
-//       `;
-//     })
-//     .join("");
-
-//   // Add event listener to "Remove" buttons
-//   document.querySelectorAll(".removeBtn").forEach((button) => {
-//     button.addEventListener("click", (event) => {
-//       const productId = button.getAttribute("data-id");
-
-//       // Remove the item from the cart
-//       const updatedCart = cartItems.filter((item) => item.id !== productId);
-
-//       // Save the updated cart back to localStorage
-//       localStorage.setItem("cart", JSON.stringify(updatedCart));
-
-//       // Refresh the page
-//       location.reload();
-//     });
-//   });
-// }
 
 
-// Load cart items from localStorage
+//       // Save the updated cart b
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Render cart items
