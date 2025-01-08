@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        .container1{
+            background-color: black;
+            font-family: 'Press Start 2P', cursive;
+             padding: 20px;
+        }
+         .border{
+            /* border: 2px solid white; */
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            margin: 20px 0;
+            position: relative;
+            
+        }
+        .number{
+            font-family: 'Press Start 2P', cursive;
+            top: 23px;
+            left: 50%;
+             z-index: 200px;
+             background-color: grey;
+            position: absolute;
+            border: 2px solid white;
+            color: white;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+           font-size: 20px;
+        }
+        .range{
+            padding-left: 1100px;
+            color: white;
+            margin-top: 50px;
+
+        }
+        .again{
+            font-family: 'Press Start 2P', cursive;
+            background-color: white;
+            color: black;
+           
+            cursor: pointer;
+            height: 40px;
+            /* width: 200px;  */
+            
+        }
+        .container2{
+             display: flex;
+             margin-bottom: 20px;
+             align-items: center; 
+            justify-content: center; 
+        
+        } 
+        .container3{
+            position: relative;
+            margin: 50px auto;
+            width: 80%;
+
+        }
+        .inputcontainer{
+             /* margin-top: 450px; */
+             text-align: right;
+
+        }
+        input{
+            font-family: 'Press Start 2P', cursive; /* Font applied */
+             background-color: black;
+             height: 30px;
+             width: 80px;
+            color: white;
+            margin-top: 30px;
+        }
+        .scorecontainer {
+           
+            color: white;
+            /* margin-left: 700px; */
+
+        }
+        .message{
+            padding-top: 100px;
+            color: white;
+            margin-left: 500px;
+        }
+        .container4{
+    
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            margin: 20px auto;
+            width: 80%
+        }
+        .inputcontainer {
+            flex: 1;
+            text-align: left;
+            /* padding-top: 50px; */
+        }
+        .scorecontainer {
+            text-align: center;
+            font-size: 16px;
+        }
+        .check{
+            font-family: 'Press Start 2P', cursive; /* Font applied */
+            height: 20px;
+            /* width: 50px; */
+            border: 2px solid black;
+
+
+        }
+
+    </style>
+</head>
+<body class="container1">
+    <div class="container2" >
+         <button onclick="resetGame()" class="again">Again!</button>
+            <p class="range">(Between 1 and 20)</p>
+    </div>
+        
+        <div  class="container3">
+
+            <h2>Guess the number..!</h2>
+         <div class="border"></div>
+         <div class="number" id="number"><p style="align-content: center;">?</p></div>
+        
+        <div class="message" id="message">Start guessing...</div>
+        
+        </div>
+        <div class="container4">
+           
+        <div class="inputcontainer">
+            <input type="number" id="guess" min="1" max="20"><br>
+            <button class="check" onclick="checkGuess()">Check!</button>
+            <div class="scorecontainer">
+                <p>Score: <span id="score">20</span></p>
+                <p>High Score: <span id="highscore">0</span></p>
+              </div>
+          </div>
+        </div>
+        
+         
+    </div>
+    <script>
+        let secretNumber = Math.floor(Math.random() * 20)+1;
+        let score = 20;
+        let highscore = 0;
+
+
+        function checkGuess(){
+            let guess = Number(document.getElementById('guess').value);
+            let message = document.getElementById('message');
+            let numberDisplay = document.getElementById('number');
+
+
+            if(!guess){
+                message.textContent = 'no input';
+
+            }else if (guess === secretNumber) {
+                message.textContent = 'correct number';
+                numberDisplay.textContent = secretNumber;
+                numberDisplay.style.backgroundColor = 'grey';
+                // document.getElementById('number').textContent = secretNumber;
+                document.body.style.background = 'green';
+
+
+                if(score > highscore){
+                    highscore = score;
+                    document.getElementById('highscore').textContent = highscore;
+                }
+            } else{
+                 if(score > 1) {
+                    message.textContent = guess >  secretNumber ? 'Too high' : 'Too low';
+                    score--;
+                    document.getElementById('score').textContent = score;
+                 } else{
+                    message.textContent = 'lost the game';
+                    document.getElementById('score').textContent = 0;
+                 }
+            }
+        }
+        function resetGame(){
+            secretNumber = Math.floor(Math.random() * 20) + 1;
+            score = 20;
+            document.getElementById('score').textContent = score;
+            document.getElementById('message').textContent = 'Start guess..';
+            document.getElementById('number').textContent = '?';
+            document.getElementById('number').style.backgroundColor = 'grey';
+            document.getElementById('guess').value = '';
+            document.body.style.backgroundColor = 'black';
+        }
+    </script>
+</body>
+</html>

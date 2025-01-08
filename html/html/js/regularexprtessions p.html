@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="email" type="text" placeholder="Enter email address" name="email"><br>
+    <p id="emailp"></p>
+    <input id="pwd" type="password" placeholder="Enter password" name="password"><br>
+     <p id="pwdp"></p>
+    <input id="login" type="button" value="login">
+    <script>
+        document.getElementById('login').addEventListener('click',()=>{
+            let email=document.getElementById('email').value;
+            let emailpattern=/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+            if(emailpattern.test(email)){
+                document.getElementById('emailp').innerHTML='valid email';
+            }else{
+                document.getElementById('emailp').innerHTML='invalid email';
+            }
+        
+            let password=document.getElementById('pwd').value;
+            let passwordpattern=/^[A-Z][a-z0-9_!@#$%^&()]{5}\d{8,}$/;
+            console.log(passwordpattern);
+            
+            if(passwordpattern.test(password)){
+                document.getElementById('pwdp').innerHTML ='valid password';
+            }else{
+                document.getElementById('pwdp').innerHTML ='invalid password';
+            }
+        });
+
+        
+    </script>
+</body>
+</html>

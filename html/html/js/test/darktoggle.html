@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>darkmode</title>
+    <style>
+      /* #body{
+        background-color: bisque;
+      }
+      #pa{
+        color: blueviolet;
+      } */
+    </style>
+</head>
+<body id="body" style="background-color: white;">
+    <button id="btn"><p id="pa" style="color: black;">toggle</p></button>
+</body>
+<script>
+    let isBisque= false
+    document.getElementById('btn').addEventListener('click',()=>{
+        
+      let body=  document.getElementById('body');
+       let  pa= document.getElementById('pa');
+        if(isBisque){
+            body.style.background ='white';
+            pa.style.color='black';
+        } else{
+            body.style.background ='bisque';
+            pa.style.color='red';
+        }
+         isBisque=!isBisque;
+
+        
+    });
+</script>
+</html>

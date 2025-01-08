@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+    <input id="email" type="email" placeholder="Enter email Address" name="email">
+    <p id="emailp"></p>
+    <input id="login" type="button" value="login">
+    <script>
+        document.getElementById('login').addEventListener('click',()=>{
+            let email=document.getElementById('email').value;
+            let pattern=/^[A-za-z0-9*&^%$#]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+            if(pattern.test(email)){
+                document.getElementById('emailp').innerHTML = 'valid Email';
+            }else{
+                document.getElementById('emailp').innerHTML = 'invalid Email';
+
+            }
+            }
+        )
+    </script>
+</body>
+</html>

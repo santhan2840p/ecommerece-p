@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let heading=document.createElement('h2')
+        
+        let text=document.createTextNode('Document Object Model Manipulation')
+        heading.appendChild(text);
+        console.log(heading);
+        heading.style.textAlign = 'center'
+        document.body.appendChild(heading)
+
+
+        let fig=document.createElement('figure')
+        console.log(fig);
+        let fig1=document.createElement('img')
+        console.log(fig1);
+        fig1.setAttribute('src','./1.jpeg')
+        fig1.setAttribute('alt','Google Company')
+
+        document.body.appendChild(fig1)
+        fig1.setAttribute('height','250');
+        fig1.setAttribute('width','300');
+        fig1.style.paddingLeft = '100px';
+        fig1.style.paddingRight = '500px';
+        
+        
+        let fig2=document.createElement('img')
+        console.log(fig2);
+        fig2.setAttribute('src','./2.jpeg')
+        fig2.setAttribute('alt','Microsoft Company')
+
+        document.body.appendChild(fig2)
+        fig2.setAttribute('height','250');
+        fig2.setAttribute('width','350');
+            
+
+
+
+        let heading1=document.createElement('h4')
+        
+        let text1=document.createTextNode('Table Data')
+        heading1.appendChild(text1);
+        console.log(heading1);
+        document.body.appendChild(heading1)
+
+        let table=document.createElement('table');
+        console.log(table);
+        table.style.border = '1px solid black';
+        table.style.borderCollapse = 'collapse';
+        let tr1=document.createElement('tr');
+        console.log(tr1);
+        let th1=document.createElement('th');
+        let text3=document.createTextNode('id');
+        th1.appendChild(text3);
+        tr1.appendChild(th1);
+        
+        th1.style.border = '1px solid black';
+
+
+        let th2=document.createElement('th');
+
+        let text4=document.createTextNode('company');
+        th2.appendChild(text4);
+        tr1.appendChild(th2);
+        th2.style.border = '1px solid black';
+
+        let th3=document.createElement('th');
+
+        let text5=document.createTextNode('Age');
+        th3.appendChild(text5);
+        tr1.appendChild(th3);
+        th3.style.border = '1px solid black';
+
+        let th4=document.createElement('th');
+
+        let text6=document.createTextNode('Salary');
+        th4.appendChild(text6);
+        tr1.appendChild(th4);
+        th4.style.border = '1px solid black';
+
+
+        table.appendChild(tr1);
+        let tr2=document.createElement('tr');
+        let td1=document.createElement('td');
+
+        let text7=document.createTextNode('001');
+        td1.appendChild(text7);
+        tr2.appendChild(td1);
+        td1.style.border = '1px solid black';
+        
+        
+        let td2=document.createElement('td');
+
+        let text8=document.createTextNode('google');
+        td2.appendChild(text8);
+        tr2.appendChild(td2);
+        td2.style.border = '1px solid black';
+
+        let td3=document.createElement('td');
+
+        let text9=document.createTextNode('30');
+        td3.appendChild(text9);
+        tr2.appendChild(td3);
+        td3.style.border = '1px solid black';
+
+        let td4=document.createElement('td');
+
+        let text10=document.createTextNode('100000');
+        td4.appendChild(text10);
+        tr2.appendChild(td4);
+        td4.style.border = '1px solid black';
+
+
+ 
+
+
+
+        table.appendChild(tr2);
+        
+        let tr3=document.createElement('tr');
+        let td5=document.createElement('td');
+
+        let text110=document.createTextNode('002');
+        td5.appendChild(text110);
+        tr3.appendChild(td5);
+        td5.style.border = '1px solid black';
+        
+        
+        let td6=document.createElement('td');
+
+        let text11=document.createTextNode('Microsoft');
+        td6.appendChild(text11);
+        tr3.appendChild(td6);
+        td6.style.border = '1px solid black';
+
+        let td7=document.createElement('td');
+
+        let text12=document.createTextNode('35');
+        td7.appendChild(text12);
+        tr3.appendChild(td7);
+        td7.style.border = '1px solid black';
+
+        let td8=document.createElement('td');
+
+        let text13=document.createTextNode('200000');
+        td8.appendChild(text13);
+        tr3.appendChild(td8);
+        td8.style.border = '1px solid black';
+        table.appendChild(tr3);
+
+
+        let tr4=document.createElement('tr');
+        let td9=document.createElement('td');
+
+        let text14=document.createTextNode('003');
+        td9.appendChild(text14);
+        tr4.appendChild(td9);
+        td9.style.border = '1px solid black';
+        
+        
+        let td10=document.createElement('td');
+
+        let text15=document.createTextNode('Microsoft');
+        td10.appendChild(text15);
+        tr4.appendChild(td10);
+        td10.style.border = '1px solid black';
+
+        let td11=document.createElement('td');
+
+        let text16=document.createTextNode('35');
+        td11.appendChild(text16);
+        tr4.appendChild(td11);
+        td11.style.border = '1px solid black';
+
+        let td12=document.createElement('td');
+
+        let text17=document.createTextNode('200000');
+        td12.appendChild(text17);
+        tr4.appendChild(td12);
+        td12.style.border = '1px solid black';
+        table.appendChild(tr4);
+
+
+        document.body.appendChild(table)    
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

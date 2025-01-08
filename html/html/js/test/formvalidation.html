@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <form> 
+           <input id="txt" type="text" placeholder="Enter Name" name="name">
+           <p id="p1"></p>
+           <br>
+           <input id="email" type="Email" placeholder="Enter Email" name="email">
+           <p id="p2"></p>
+           <br>
+           <input id="feed" type="text" placeholder="Feedback Fields" name="Feedback">
+           <p id="p3"></p>
+           <br>
+           <input id="login" type="button" value="signup">
+
+    </form>
+           <script>
+            document.getElementById('login').addEventListener('click',()=>{
+                let name=document.getElementById('txt').value;
+                let namepattern=/^[A-Za-z]{3,}$/
+                if(namepattern.test(name)){
+                document.getElementById('p1').innerHTML = 'valid Name';
+            }else{
+                document.getElementById('p1').innerHTML = 'invalid Name';
+
+            }
+            let email=document.getElementById('email').value;
+            let emailpattern=/^[A-za-z0-9*&^%$#]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+            if(emailpattern.test(email)){
+                document.getElementById('p2').innerHTML = 'valid Email';
+            }else{
+                document.getElementById('p2').innerHTML = 'invalid Email';
+
+            }
+            let Feedback=document.getElementById('feed').value;
+            let Feedbackpattern=/^[A-za-z0-9*!@#$%_]{10,}$/;
+            if(Feedbackpattern(Feedback)){
+                document.getElementById('p3').innerHTML = 'valid Feedback field';
+            }else{
+                document.getElementById('p3').innerHTML = 'invalid feedback field';
+            }
+           
+
+           });
+           
+           </script>
+
+</body>
+</html>

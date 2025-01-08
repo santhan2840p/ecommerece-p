@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handlers</title>
+    <style>
+        .button{
+        border: 1px solid black;
+        width: 200px;  
+        text-align: center;
+        margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2> Event Handlers</h2>
+    <div class="button">
+        <button id="google">Login</button>
+        <h4 id="goo">Google</h4>
+    </div>
+    <div class="button">
+        <button id="microsoft">Login</button>
+        <h4 id="micro">Microsoft</h4>
+    </div>
+     <div class="button">
+        <button id="amazon">Login</button>
+        <h4 id="ama">Amazon</h4>
+    </div>
+     <div class="button">
+        <button id="facebook">Login</button>
+        <h4 id="face">Facebook</h4>
+    </div>
+     <div class="button">
+        <button id="wipro">Login</button>
+        <h4 id="wip">Wipro</h4>
+    </div>
+    <script>
+        document.getElementById('google').addEventListener('click',()=>{
+        document.getElementById('goo').style.color = 'red';
+         });
+         document.getElementById('microsoft').addEventListener('click',()=>{
+        document.getElementById('micro').style.color = 'blue';
+         });
+         document.getElementById('amazon').addEventListener('click',()=>{
+        document.getElementById('ama').style.color = 'orange';
+         });
+         document.getElementById('facebook').addEventListener('click',()=>{
+        document.getElementById('face').style.color = 'purple';
+         });
+         document.getElementById('wipro').addEventListener('click',()=>{
+        document.getElementById('wip').style.color = 'yellow';
+         });
+        
+    </script>
+</body>
+</html>
