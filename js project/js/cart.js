@@ -1,6 +1,4 @@
 
-
-//       // Save the updated cart b
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Render cart items
